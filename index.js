@@ -24,22 +24,12 @@ const handleSubmit = (ev) => {
   birthplace.textContent = "Birthplace: " + form.birthplace.value
 
   const colorDiv = renderColor(hairColor)
-  //details.appendChild(document.createElement('ul'))
   color.appendChild(colorDiv)
   details.appendChild(personName)
   details.appendChild(color)
   details.appendChild(age)
   details.appendChild(birthplace)
 
-  /*details.innerHTML = `
-    <ul>
-      
-     <li>Hair Color: ${colorDiv.outerHTML}</li>
-      <li>Age: ${age}</li>
-      <li>Birthplace: ${birthplace}</li>
-    </ul>
-  `
-  */
 }
 
 personForm.addEventListener('submit', handleSubmit)
